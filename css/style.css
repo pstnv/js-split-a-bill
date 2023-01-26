@@ -1,0 +1,434 @@
+body {
+	margin: 0;
+	background-image: url("https://cdn.glitch.global/2037c91b-af6c-4895-9a0e-9f75efad5a72/bg.jpg?v=1648325952241");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: #cb877c;
+	overflow-wrap: break-word;
+	height: 100vh;
+	min-height: 620px;
+	color: #30190f;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.bill {
+	margin: 20px;
+	width: 500px;
+	height: 600px;
+	background-color: #f2f3f4;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-shadow: 7px 5px 5px rgb(44, 44, 44, 0.5);
+	        box-shadow: 7px 5px 5px rgb(44, 44, 44, 0.5);
+}
+
+
+/************fillForm*****************/
+
+.fillForm {
+	background-color: #2c2c2c;
+	/* background-color: #3d0300; */
+	padding: 30px;
+	width: 180px;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+}
+
+.logoImage {
+	height: 100%;
+	fill: #b7706c;
+}
+
+form {
+	margin: 20px 0;
+	padding: 0;
+	color: #f2f3f4;
+}
+
+label {
+	margin: 10px 0;
+	font-size: 12px;
+	color: #b7706c;
+}
+
+input {
+	width: 100%;
+	margin: 40px 0 5px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 3px solid white;
+	background-color: #2c2c2c;
+	font-size: 26px;
+	color: #f2f3f4;
+	outline: none;
+}
+
+input::-webkit-input-placeholder {
+	font-size: 14px;
+	color: grey;
+}
+
+input::-moz-placeholder {
+	font-size: 14px;
+	color: grey;
+}
+
+input::-ms-input-placeholder {
+	font-size: 14px;
+	color: grey;
+}
+
+input:-ms-input-placeholder {
+	font-size: 14px;
+	color: grey;
+}
+
+input::placeholder {
+	font-size: 14px;
+	color: grey;
+}
+
+/* .fillTips {
+	margin: 50px 0;
+} */
+
+.fillTips span {
+	font-size: 12px;
+	color: #b7706c;
+}
+
+.buttonsTip {
+	margin: 5px 0px;
+	width: 100%;
+	min-width: 100px;
+	height: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#reduce,
+#raise {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	padding: 10px;
+    margin: 0;
+	border-radius: 0;
+	border: none;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: rgb(209, 209, 209);
+}
+
+#reduce {
+	border-right: 1px solid grey;
+}
+
+#raise {
+	border-left: 1px solid grey;
+}
+
+#reduce:hover,
+#raise:hover {
+	background-color: rgb(209, 209, 209);
+}
+#reduce img,
+#raise img {
+	height: 100%;
+    max-width: 20px;
+}
+
+/************COUNTFORM*****************/
+
+.countForm {
+	padding: 30px;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.header {
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 26px;
+}
+
+h3 {
+	margin: 0;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+.total {
+	margin-top: 30px;
+}
+
+#today,
+.total p {
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	font-size: 12px;
+}
+
+.headerTotal {
+	margin: 5px 0;
+	font-size: 26px;
+	min-height: 30px;
+	word-break: break-all;
+}
+
+.description {
+	margin-top: 30px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: start;
+}
+
+td {
+	padding: 20px 3px 10px;
+	text-align: start;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+tr {
+	border-bottom: 1px solid #b7706c;
+}
+
+#dividedBill,
+#tipPerPerson,
+#totalSum {
+	word-break: break-all;
+}
+
+.totalBill {
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	margin: 50px 0 20px auto;
+	padding: 0px 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border: 2px solid #b7706c;
+}
+
+.totalBill p {
+	margin: 0;
+	margin-right: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.totalBill span {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+
+/************ FOOTER ***********/
+
+hr {
+	margin: 3px 0 0;
+	height: 3px;
+}
+
+footer {
+	margin-top: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+	text-align: center;
+}
+
+footer p {
+	margin: 5px;
+	font-size: 10px;
+	color: grey;
+}
+
+@media all and (max-width:550px) {
+	.container {
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
+	}
+	.bill {
+		margin: 15px;
+		width: 100%;
+		height: 550px;
+	}
+	/************fillForm*****************/
+	.fillForm {
+		padding: 20px 15px;
+		width: 130px;
+	}
+	/************COUNTFORM*****************/
+	.countForm {
+		padding: 25px 10px;
+	}
+	.headerTotal {
+		margin: 5px 0;
+		font-size: 22px;
+	}
+	.totalBill {
+		padding: 0px 10px;
+	}
+	.totalBill p {
+		margin-right: 15px;
+		font-size: 12px;
+	}
+	.totalBill p span {
+		font-size: 10px;
+	}
+}
+
+@media all and (max-width:340px) {
+	body {
+		min-height: 460px;
+	}
+	.bill {
+		margin: 10px 5px;
+		width: 100%;
+		height: 450px;
+	}
+	/************fillForm*****************/
+	.fillForm {
+		padding: 15px 10px;
+		width: 120px;
+	}
+	.logo {
+		width: 50px;
+		height: 50px;
+	}
+	label {
+		font-size: 11px;
+	}
+	input {
+		margin: 30px 0 2px;
+		font-size: 20px;
+	}
+	input::-webkit-input-placeholder {
+		font-size: 12px;
+	}
+	input::-moz-placeholder {
+		font-size: 12px;
+	}
+	input::-ms-input-placeholder {
+		font-size: 12px;
+	}
+	input:-ms-input-placeholder {
+		font-size: 12px;
+	}
+	input::placeholder {
+		font-size: 12px;
+	}
+	.fillTips span {
+		font-size: 10px;
+	}
+	.buttonsTip {
+		margin: 5px 0 2px;
+		min-width: 80px;
+		height: 30px;
+	}
+	/************COUNTFORM*****************/
+	.countForm {
+		padding: 15px 10px;
+	}
+	h1 {
+		letter-spacing: 3px;
+		font-size: 22px;
+	}
+	.total {
+		margin-top: 20px;
+	}
+	.headerTotal {
+		margin: 5px 0;
+		font-size: 15px;
+	}
+	.description {
+		margin-top: 20px;
+	}
+	td {
+		padding: 15px 3px 8px;
+		font-size: 11px;
+	}
+	.totalBill {
+		margin: 30px 0 20px auto;
+		padding: 0px 5px;
+	}
+	.totalBill p {
+		font-size: 11px;
+	}
+	.totalBill p span {
+		font-size: 9px;
+	}
+}

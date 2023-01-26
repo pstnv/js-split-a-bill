@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Split A Bill</title>
+        <link rel="icon" href="https://cdn.glitch.global/2037c91b-af6c-4895-9a0e-9f75efad5a72/ico_calc.ico?v=1648326449934">
+        <link rel = "stylesheet" href= "style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="bill">
+                <div class="fillForm">
+                    <div class="logo">
+                        <img class="logoImage" src="https://cdn.glitch.global/2037c91b-af6c-4895-9a0e-9f75efad5a72/calc.svg?v=1647971204172" alt="logo">
+                    </div>
+                    <form>
+                        <label>
+                        <input id="inputTotal" type="text" placeholder="add here">
+                        THE TOTAL
+                        </label>
+                        <label>
+                        <input id="inputPeople" type="text" placeholder="add here">
+                        THE NUMBER OF PEOPLE
+                        </label>
+                        <div class="fillTips">
+                            <input id="inputTip" type="text" readonly placeholder="% 0">
+                            <div class="buttonsTip">
+                                <button id="reduce">
+                                    <img src="https://cdn.glitch.global/2037c91b-af6c-4895-9a0e-9f75efad5a72/reduce.png?v=1648025372896" alt="-">
+                                </button>
+                                <button id="raise">                                    
+                                <img src="https://cdn.glitch.global/2037c91b-af6c-4895-9a0e-9f75efad5a72/add.png?v=1648025381391" alt="+">
+                                </button>
+                            </div>
+                            <span> ADD A TIP </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="countForm">
+                    <div class="header">
+                        <h1> SPLIT</h1>
+                        <h3>a bill</h3>
+                    </div>
+                    <div class="total">
+                        <p id ="today">Date: 10 February, 2022</p>
+                        <p>Total with tips:</p>
+                        <h2 id="billAndTips" class="headerTotal"> </h2>
+                    </div>
+                    <div class="description">
+                        <table>
+                            <tr>
+                                <td>Bill per person</td>
+                                <td  id="dividedBill"> </td>
+                            </tr>
+                            <tr>
+                                <td>Tip per person</td>
+                                <td id="tipPerPerson"> </td>
+                            </tr>
+                        </table>
+                        <div class="totalBill">
+                            <p>TOTAL <br> <span>per person</span></p>
+                            <h2 id="totalSum" class="headerTotal"> </h2>
+                        </div>
+                    </div>
+                    <footer>
+                        <hr>
+                        <p> For educational purposes only </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
