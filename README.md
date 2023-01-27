@@ -1,4 +1,4 @@
-<h1> Мои любимые книги </h1>
+<h1> Разделить счёт </h1>
 <a href="https://pstnv-split-abill.glitch.me/"> https://pstnv-split-abill.glitch.me </a>
 
 <div align="center">
